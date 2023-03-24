@@ -26,7 +26,7 @@ We examine two case studies to test the approach: one showing dissimilar abstrac
 
 1. **Separation between dissimilar clusters**: We combine three subsets of patents containing the words 'drugs', 'footwear', and 'speech'. We examine cases where words appear in the abstract and title. The sizes of subsets with these words in abstracts are 831, 552, and 1409, and in titles are 217, 364, and 571, respectively. To avoid selection bias, we apply our method with and without search terms in the abstracts. In Figure 2, dots represent patents, and colors indicate the subset each patent is from.
 
-[![Figure 2](https://github.com/sverrirhd/patent-visualization-with-t-SNE/raw/main/images/figure2.png)
+![Figure 2](https://github.com/sverrirhd/patent-visualization-with-t-SNE/raw/main/images/figure2.png)
 Figure 2: First case study (Dissimilar subsets). Clear clustering with negligible overlap is observed. Locality in the vector space is tied to similarity in abstract content. The presence of search terms in the title or abstract doesn't significantly affect the results.
 
 Overlapping of similar clusters: The second case study uses phrases 'drugs', 'surgery', and 'physiological', expecting overlapping clusters due to similar medical and biological terminology.
