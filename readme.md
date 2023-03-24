@@ -17,7 +17,7 @@ Venture capital financing supports early-stage companies with high growth potent
 5. **Visualization**: We use t-SNE for visualizing high-dimensional data, focusing on demonstrating the data's potential usefulness for venture capital. The t-SNE algorithm conserves distance between points, emphasizing similarity in content for exploring and searching patents in this vector space.
 6. **Scalability**: The total number of unique words in our vocabulary is a function of the number of patents included in our analysis. We limit memory to 4GB, allowing for approximately 22,360 patents for storage, with subsets no larger than N=2,000 in the application due to computational limitations.
 
-![Figure 1](figure1.png)
+![Figure 1](https://github.com/sverrirhd/patent-visualization-with-t-SNE/raw/main/images/figure1.png)
 *Figure 1: The relationship between the number of unique words and the number of abstracts in a collection is approximated for 1 to 12,000 patents. The similarity matrix becomes the limiting factor after 5,000 patents. With a 4GB memory limit, we can store up to 22,360 patents.*
 
 ### Results
@@ -26,11 +26,12 @@ We examine two case studies to test the approach: one showing dissimilar abstrac
 
 1. **Separation between dissimilar clusters**: We combine three subsets of patents containing the words 'drugs', 'footwear', and 'speech'. We examine cases where words appear in the abstract and title. The sizes of subsets with these words in abstracts are 831, 552, and 1409, and in titles are 217, 364, and 571, respectively. To avoid selection bias, we apply our method with and without search terms in the abstracts. In Figure 2, dots represent patents, and colors indicate the subset each patent is from.
 
-![Figure 2](figure2.png)
+[![Figure 2](https://github.com/sverrirhd/patent-visualization-with-t-SNE/raw/main/images/figure2.png)
 Figure 2: First case study (Dissimilar subsets). Clear clustering with negligible overlap is observed. Locality in the vector space is tied to similarity in abstract content. The presence of search terms in the title or abstract doesn't significantly affect the results.
 
 Overlapping of similar clusters: The second case study uses phrases 'drugs', 'surgery', and 'physiological', expecting overlapping clusters due to similar medical and biological terminology.
-![Figure 3](figure3.png)
+
+![Figure 3](https://github.com/sverrirhd/patent-visualization-with-t-SNE/raw/main/images/figure3.png)
 Figure 3: Second case study (similar subsets). More overlap is seen when search terms appear in the abstract, while less overlap occurs when search terms are in the title. This indicates greater specialization when a term is in the title.
 
 Conclusion
