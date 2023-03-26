@@ -41,5 +41,33 @@ Repository Contents
 This GitHub repository includes all the notebooks and images used in the report:
 
 Notebooks: Jupyter notebooks containing the code for data preprocessing, analysis, and visualization.
-Images: Figures and visualizations used in the report.
+Images: images and visualizations used in the report.
 Please refer to the notebooks and images to further explore the methodology and results of this study.
+
+## Appendix
+
+### Demonstration of practical application
+
+Once we saw it was possible to cluster patents in this way, we tried to implement these methods in a simple interactive tool that can demonstrate the usefulness of this method on a real-life example. The example used here is the intention to investigate the distribution of patents in the subfield of ‘network patents specifically relating to social networks.
+
+First, the user searches for all patents, with and after the year 2018, containing the word network in the abstract. The tool finds 32,814 such patents. The tool automatically reduces the size to 10,000 before the next step by random selection to reduce computation time and memory required.
+
+![Figure 4: User interface for patent space visualization tool](https://github.com/sverrirhd/patent-visualization-with-t-SNE/raw/main/images/figure4.png)
+
+The user then goes to the next tab, specifies some keywords for labeling the patents. The user picks the words ‘neural’, ‘wireless’, and ‘social’, since the user wants to see how much these subdomains overlap. The user finds that these subsets separate themselves quite a bit in the ‘network’ domain. The user then hovers over some points in dense clusters, attempting to find other ‘network’ subdomains.
+
+![Figure 5: User interface for patent space visualization tool with the results of the search and patents colored based on if they contain a certain term or not](https://github.com/sverrirhd/patent-visualization-with-t-SNE/raw/main/images/figure5.png)
+
+The user finds the words ‘communication’, ‘packet’, and ‘virtual’ to be common in some clusters and adds these terms to be labeled. This gives a much more detailed picture of subdomains and their relation to social networks.
+
+![Figure 6: User interface for patent space visualization tool with the results of the search and patents colored based on if they contain a certain term or not, with more colors and more terms that show the clustering of patents with certain terms](https://github.com/sverrirhd/patent-visualization-with-t-SNE/raw/main/images/figure6.png)
+
+The user then finally drags a shape around the most prominent clusters of patents labeled with the ‘social’ search term and then goes to the next tab.
+
+![Figure 7: User interface for patent space visualization tool with the results of the search and patents colored based on if they contain a certain term or not, with more colors and more terms that show the clustering of patents with certain terms. Here we also see highlighted, a region with patents containing the words "social"](https://github.com/sverrirhd/patent-visualization-with-t-SNE/raw/main/images/figure7.png)
+
+There, the user is able to see the most prominent patent holders in this domain. To no surprise, the biggest number of patents in the selected area belongs to Facebook, then followed by IBM and Google.
+
+![Figure 8: The second part of the UI with a timeline of the highlighted patents from the previous image and a breakdown of which companies own these patents.](https://github.com/sverrirhd/patent-visualization-with-t-SNE/raw/main/images/figure8.png)
+https://github.com/sverrirhd/patent-visualization-with-t-SNE/raw/main/images/figure1.png
+The user is interested in seeing how the acquisition of patents by Facebook has developed and if there is some trend that can give insight. The user double-clicks on Facebook's label in the legend and is presented with a similar graph where Facebook's patent history has been isolated.
