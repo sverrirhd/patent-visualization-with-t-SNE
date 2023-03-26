@@ -18,6 +18,7 @@ Venture capital financing supports early-stage companies with high growth potent
 6. **Scalability**: The total number of unique words in our vocabulary is a function of the number of patents included in our analysis. We limit memory to 4GB, allowing for approximately 22,360 patents for storage, with subsets no larger than N=2,000 in the application due to computational limitations.
 
 ![Figure 1](https://github.com/sverrirhd/patent-visualization-with-t-SNE/raw/main/images/figure1.png)
+
 *Figure 1: The relationship between the number of unique words and the number of abstracts in a collection is approximated for 1 to 12,000 patents. The similarity matrix becomes the limiting factor after 5,000 patents. With a 4GB memory limit, we can store up to 22,360 patents.*
 
 ### Results
