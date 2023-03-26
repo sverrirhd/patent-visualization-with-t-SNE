@@ -69,6 +69,4 @@ The user then finally drags a shape around the most prominent clusters of patent
 There, the user is able to see the most prominent patent holders in this domain. To no surprise, the biggest number of patents in the selected area belongs to Facebook, then followed by IBM and Google.
 
 ![Figure 8: The second part of the UI with a timeline of the highlighted patents from the previous image and a breakdown of which companies own these patents.](https://github.com/sverrirhd/patent-visualization-with-t-SNE/raw/main/images/figure8.png)
-https://github.com/sverrirhd/patent-visualization-with-t-SNE/raw/main/images/figure1.png)
-
 The user is interested in seeing how the acquisition of patents by Facebook has developed and if there is some trend that can give insight. The user double-clicks on Facebook's label in the legend and is presented with a similar graph where Facebook's patent history has been isolated.
